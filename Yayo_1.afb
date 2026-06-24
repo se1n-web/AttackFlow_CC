@@ -1,0 +1,1474 @@
+{
+    "schema": "attack_flow_v2",
+    "theme": "dark_theme",
+    "objects": [
+        {
+            "id": "flow",
+            "instance": "1867be2a-734f-440b-b9d1-c2e28c8ef0e6",
+            "properties": [
+                [
+                    "name",
+                    "Yayo"
+                ],
+                [
+                    "description",
+                    "Yayo threat actor attack flow based on Group-IB Threat Intelligence."
+                ],
+                [
+                    "author",
+                    [
+                        [
+                            "name",
+                            "BBS CTI"
+                        ],
+                        [
+                            "identity_class",
+                            "organization"
+                        ],
+                        [
+                            "contact_information",
+                            null
+                        ]
+                    ]
+                ],
+                [
+                    "scope",
+                    "incident"
+                ],
+                [
+                    "classification",
+                    [
+                        [
+                            "marking",
+                            null
+                        ],
+                        [
+                            "group",
+                            null
+                        ]
+                    ]
+                ],
+                [
+                    "external_references",
+                    [
+                        [
+                            "03e5e03b-dd98-4369-9f6c-5d73dc0044de",
+                            [
+                                [
+                                    "source_name",
+                                    "Group IB"
+                                ],
+                                [
+                                    "description",
+                                    "Group-IB Threat Intelligence :: Matrix"
+                                ],
+                                [
+                                    "url",
+                                    null
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "created",
+                    {
+                        "time": "2026-06-24T08:00:00.000+08:00",
+                        "zone": "Asia/Manila"
+                    }
+                ]
+            ],
+            "objects": [
+                "af60bfe1-c90b-4126-9b56-156cb97386b5",
+                "c2f00f5d-55f0-4f81-bc73-87e1a3785f6b",
+                "122fd438-cf6f-45f8-8eab-eb84786b79c1",
+                "cadaad7a-71a9-48c9-ab0b-b1fc6e54ac6b",
+                "479f6be8-7d01-489c-941c-3bf1dc8b08f4",
+                "1e7c830b-b448-4fde-b847-db6e2f42071c",
+                "1b3d1ac5-34de-43fd-a61e-f34a907248d5",
+                "9487d5be-92e8-4735-89ec-09539d18eabf",
+                "1a74d51a-8b42-470a-ae64-867405214f04",
+                "4eef949a-5c22-47f0-b62f-fc4f79a74d3d",
+                "d6da95cf-efab-4113-9227-7d23326e1dbd",
+                "41ee0ea8-4036-4064-b8c4-e4b8c6d6472f",
+                "09a07373-156b-4d27-9955-8b89a9fa381f",
+                "216d33a8-5cfd-4ec2-893c-0a64f4982cde",
+                "ee77d17b-d2c2-48d6-9c88-384dca68de41",
+                "769fb801-3ded-4836-b325-34d7928bfdd3",
+                "60f6d58e-f708-4fd7-b501-c92cf34dc2b7",
+                "4d2fbe83-e628-404b-ae6e-40d70acb4362",
+                "c4d69a29-ba55-47d3-812a-55dc7098ed1e",
+                "f0f85fe0-9376-4c3f-bb6d-8159693f8a90"
+            ]
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "af60bfe1-c90b-4126-9b56-156cb97386b5",
+            "source": "9ac9e118-06dd-43a3-b696-572f482796f8",
+            "target": "096aff21-a89e-48cb-ba0c-cf7273a9b430",
+            "handles": [
+                "e276da47-1fcb-44d3-9c97-570e7a3cfee0"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "9ac9e118-06dd-43a3-b696-572f482796f8"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "096aff21-a89e-48cb-ba0c-cf7273a9b430"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "e276da47-1fcb-44d3-9c97-570e7a3cfee0"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "c2f00f5d-55f0-4f81-bc73-87e1a3785f6b",
+            "source": "977f45a8-7651-4c1b-95ec-e74b7eb1d5bb",
+            "target": "341e69af-d8d0-4b67-bc36-e6c6b4af0fec",
+            "handles": [
+                "1e6bf801-0721-42a8-90f2-0aa870ffc2cc"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "977f45a8-7651-4c1b-95ec-e74b7eb1d5bb"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "341e69af-d8d0-4b67-bc36-e6c6b4af0fec"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "1e6bf801-0721-42a8-90f2-0aa870ffc2cc"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "122fd438-cf6f-45f8-8eab-eb84786b79c1",
+            "source": "088f09d9-5407-47d9-aacb-c3f47d0b9b16",
+            "target": "d1d64bc8-400a-4e80-9a45-64017d0fd8c5",
+            "handles": [
+                "64c72bbb-7287-4679-8ac5-cf8be21fb784"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "088f09d9-5407-47d9-aacb-c3f47d0b9b16"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "d1d64bc8-400a-4e80-9a45-64017d0fd8c5"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "64c72bbb-7287-4679-8ac5-cf8be21fb784"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "cadaad7a-71a9-48c9-ab0b-b1fc6e54ac6b",
+            "source": "a6deb674-9313-4cb6-ba3a-ff1adee5862c",
+            "target": "20f0e29f-0c12-4328-8a55-b55630f836f2",
+            "handles": [
+                "5b1082b6-d1b5-4afc-bd27-dfea56843a0f"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "a6deb674-9313-4cb6-ba3a-ff1adee5862c"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "20f0e29f-0c12-4328-8a55-b55630f836f2"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "5b1082b6-d1b5-4afc-bd27-dfea56843a0f"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "479f6be8-7d01-489c-941c-3bf1dc8b08f4",
+            "source": "1907ecec-6ca3-4c9c-9069-3f770e362315",
+            "target": "413925f0-0e03-4cfb-9062-afdf17b867bb",
+            "handles": [
+                "dfc06d89-a257-490b-8af7-b1f359a881bd"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "1907ecec-6ca3-4c9c-9069-3f770e362315"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "413925f0-0e03-4cfb-9062-afdf17b867bb"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "dfc06d89-a257-490b-8af7-b1f359a881bd"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "1e7c830b-b448-4fde-b847-db6e2f42071c",
+            "source": "e3ad4ee7-fc49-4e0c-bee1-c8ec9c71e9d6",
+            "target": "50c1c271-c1a9-41b6-91e1-e64253c38030",
+            "handles": [
+                "2ecd67d4-8624-4bd0-a5c2-8270372315cf"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "e3ad4ee7-fc49-4e0c-bee1-c8ec9c71e9d6"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "50c1c271-c1a9-41b6-91e1-e64253c38030"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "2ecd67d4-8624-4bd0-a5c2-8270372315cf"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "1b3d1ac5-34de-43fd-a61e-f34a907248d5",
+            "source": "21bfb792-995b-48db-956f-050b266658e8",
+            "target": "910dfbbb-a805-4695-8a84-1e4fcb842ffb",
+            "handles": [
+                "7fcbb0c4-a291-403c-ba7e-4d9cabc2e6be"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "21bfb792-995b-48db-956f-050b266658e8"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "910dfbbb-a805-4695-8a84-1e4fcb842ffb"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "7fcbb0c4-a291-403c-ba7e-4d9cabc2e6be"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "9487d5be-92e8-4735-89ec-09539d18eabf",
+            "source": "f517477f-e28a-440e-8897-6c7ede0d3ccc",
+            "target": "a748bb7d-71a4-424a-92b4-45606ecb09c5",
+            "handles": [
+                "ab4498c8-2dc3-4e55-b32b-d303d0068138"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "f517477f-e28a-440e-8897-6c7ede0d3ccc"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "a748bb7d-71a4-424a-92b4-45606ecb09c5"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "ab4498c8-2dc3-4e55-b32b-d303d0068138"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "1a74d51a-8b42-470a-ae64-867405214f04",
+            "source": "5a40fcfd-41a7-4e32-aeb6-de977995421f",
+            "target": "94bc6038-919a-4936-9464-732937e5f08a",
+            "handles": [
+                "d04e4304-04a8-47ac-9225-51437512c99d"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "5a40fcfd-41a7-4e32-aeb6-de977995421f"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "94bc6038-919a-4936-9464-732937e5f08a"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "d04e4304-04a8-47ac-9225-51437512c99d"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "4eef949a-5c22-47f0-b62f-fc4f79a74d3d",
+            "source": "7f896bc1-a6f5-4175-a20d-8d909778bfa2",
+            "target": "140b0573-4832-4242-8f0a-bc1c2ec7a577",
+            "handles": [
+                "b89f02cc-c409-4446-82d9-60625d7b7c50"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "7f896bc1-a6f5-4175-a20d-8d909778bfa2"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "140b0573-4832-4242-8f0a-bc1c2ec7a577"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "b89f02cc-c409-4446-82d9-60625d7b7c50"
+        },
+        {
+            "id": "action",
+            "instance": "d6da95cf-efab-4113-9227-7d23326e1dbd",
+            "properties": [
+                [
+                    "name",
+                    "Valid Accounts"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0001"
+                        ],
+                        [
+                            "technique",
+                            "T1078"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Yayo acquires valid credentials — targeting both domain and local accounts — through stealer malware logs, credential markets, and prior breach datasets. The actor's credential acquisition spans multiple account tiers, with a strong emphasis on domain-level credentials that enable broad lateral movement across Active Directory environments."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "b4995236-2856-495c-b732-8ed9bc81bd35",
+                "30": "ca7a5d91-4959-486c-85e0-a74910d35488",
+                "60": "594db8e0-7220-4f6c-ad8c-21c408f4a842",
+                "90": "d672aded-3abe-489d-ab3d-d7f5593d4f27",
+                "120": "531682f8-9622-49dd-b072-66f3d00aa473",
+                "150": "99e79bb2-bb5d-4174-a4e0-a3a301def552",
+                "180": "8ec11d92-acb3-4af3-836f-a96c0997d39d",
+                "210": "299ea8c0-e13d-4abe-8ed4-f1de6a808834",
+                "240": "4743807b-a375-4989-80f1-e763751b0177",
+                "270": "c2db3a33-3eac-4d7b-800e-34ab4076a122",
+                "300": "a10d13ee-df78-4ddd-b41c-de7b1360cdd7",
+                "330": "76402d17-7b26-42fb-9a20-cc05fc5c0924"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "b4995236-2856-495c-b732-8ed9bc81bd35",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "ca7a5d91-4959-486c-85e0-a74910d35488",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "594db8e0-7220-4f6c-ad8c-21c408f4a842",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "d672aded-3abe-489d-ab3d-d7f5593d4f27",
+            "latches": [
+                "9ac9e118-06dd-43a3-b696-572f482796f8"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "531682f8-9622-49dd-b072-66f3d00aa473",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "99e79bb2-bb5d-4174-a4e0-a3a301def552",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "8ec11d92-acb3-4af3-836f-a96c0997d39d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "299ea8c0-e13d-4abe-8ed4-f1de6a808834",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4743807b-a375-4989-80f1-e763751b0177",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "c2db3a33-3eac-4d7b-800e-34ab4076a122",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a10d13ee-df78-4ddd-b41c-de7b1360cdd7",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "76402d17-7b26-42fb-9a20-cc05fc5c0924",
+            "latches": [
+                "977f45a8-7651-4c1b-95ec-e74b7eb1d5bb"
+            ]
+        },
+        {
+            "id": "action",
+            "instance": "41ee0ea8-4036-4064-b8c4-e4b8c6d6472f",
+            "properties": [
+                [
+                    "name",
+                    "Domain Accounts"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0001"
+                        ],
+                        [
+                            "technique",
+                            "T1078.002"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Domain Accounts is Yayo's second-highest frequency technique at 25 reports — the actor specifically targets and abuses Active Directory domain credentials obtained via stealer logs or credential markets to authenticate to internet-facing services. Domain account access enables broad lateral movement across the AD environment and is the actor's preferred credential class, providing organisation-wide reach from a single set of harvested credentials."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "f47550fd-7c30-42de-8b12-9f54bedbc5d2",
+                "30": "906a7230-67da-4212-b4a7-1f60f3c80895",
+                "60": "4986505c-844d-48e2-a5d4-d4a750aa0377",
+                "90": "ed06653f-e232-45bb-9d0a-736d3719d7ea",
+                "120": "dd2cc7c2-1f4c-4aad-b953-dd140ba98f4a",
+                "150": "22562e3b-826d-47b0-a2f0-ff7d5bf5fdb3",
+                "180": "e939e199-ff4f-41c6-864d-cdd07bdd2c7b",
+                "210": "968c4b5a-3008-4c55-9fbb-6428b5292b5c",
+                "240": "5b19dde0-c7b5-4e78-9d88-ee93496cb2e4",
+                "270": "490865fc-18e6-4b7d-9fa9-9e12a3df7406",
+                "300": "3941afd9-4856-4d4b-b00d-b5c7d85ecc33",
+                "330": "af690f51-f9dc-430c-b401-a49e1390cd1d"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f47550fd-7c30-42de-8b12-9f54bedbc5d2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "906a7230-67da-4212-b4a7-1f60f3c80895",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4986505c-844d-48e2-a5d4-d4a750aa0377",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "ed06653f-e232-45bb-9d0a-736d3719d7ea",
+            "latches": [
+                "096aff21-a89e-48cb-ba0c-cf7273a9b430"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "dd2cc7c2-1f4c-4aad-b953-dd140ba98f4a",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "22562e3b-826d-47b0-a2f0-ff7d5bf5fdb3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e939e199-ff4f-41c6-864d-cdd07bdd2c7b",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "968c4b5a-3008-4c55-9fbb-6428b5292b5c",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "5b19dde0-c7b5-4e78-9d88-ee93496cb2e4",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "490865fc-18e6-4b7d-9fa9-9e12a3df7406",
+            "latches": [
+                "21bfb792-995b-48db-956f-050b266658e8"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "3941afd9-4856-4d4b-b00d-b5c7d85ecc33",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "af690f51-f9dc-430c-b401-a49e1390cd1d",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "09a07373-156b-4d27-9955-8b89a9fa381f",
+            "properties": [
+                [
+                    "name",
+                    "Local Accounts"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0001"
+                        ],
+                        [
+                            "technique",
+                            "T1078.003"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Yayo abuses local administrator credentials — sourced from stealer logs and credential combo lists — as a secondary access path, authenticating to internet-facing RDP and management services on hosts lacking centralised credential management. Local account access supplements domain credential use and provides a fallback access method when domain accounts are locked or rotated."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "d4f38feb-2a64-4960-ac11-6d623007f06a",
+                "30": "d020e591-2e5a-45c4-87fd-68ded0aed0c2",
+                "60": "27ed6606-8c55-439d-8fce-5b24b9724c51",
+                "90": "f02c56bc-99c9-4e1e-9cc9-749ec325d1d0",
+                "120": "d873b227-1705-4394-952c-ecbaa7a13b75",
+                "150": "bca58351-d11d-4f12-af1e-72827fa182d9",
+                "180": "adefae61-ec93-4b52-94c4-33e538494e41",
+                "210": "8bcb46f1-cefa-43ec-b69d-5fb327f86122",
+                "240": "0ee94179-1ceb-46e2-887d-f189c7922408",
+                "270": "fcea8178-df65-458d-9367-04fac4ff618a",
+                "300": "390f38e2-6487-4035-80e0-44fc15574132",
+                "330": "04ca2852-5355-48a4-964c-114c14b48cbe"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d4f38feb-2a64-4960-ac11-6d623007f06a",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d020e591-2e5a-45c4-87fd-68ded0aed0c2",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "27ed6606-8c55-439d-8fce-5b24b9724c51",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f02c56bc-99c9-4e1e-9cc9-749ec325d1d0",
+            "latches": [
+                "341e69af-d8d0-4b67-bc36-e6c6b4af0fec"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "d873b227-1705-4394-952c-ecbaa7a13b75",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "bca58351-d11d-4f12-af1e-72827fa182d9",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "adefae61-ec93-4b52-94c4-33e538494e41",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "8bcb46f1-cefa-43ec-b69d-5fb327f86122",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0ee94179-1ceb-46e2-887d-f189c7922408",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "fcea8178-df65-458d-9367-04fac4ff618a",
+            "latches": [
+                "f517477f-e28a-440e-8897-6c7ede0d3ccc"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "390f38e2-6487-4035-80e0-44fc15574132",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "04ca2852-5355-48a4-964c-114c14b48cbe",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "216d33a8-5cfd-4ec2-893c-0a64f4982cde",
+            "properties": [
+                [
+                    "name",
+                    "External Remote Services"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0001"
+                        ],
+                        [
+                            "technique",
+                            "T1133"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "External Remote Services is Yayo's highest-frequency and most consistently observed technique at 31 reports — the actor gains entry to victim environments through internet-facing RDP gateways, VPN appliances, and remote management services using stolen domain and local credentials. This node anchors all post-access operations, with RDP-based lateral movement (9 reports) serving as the actor's primary pivot technique and Telegram providing the C2 channel for ongoing operations."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "d3ff1563-8fe0-4d88-b7ea-2a1d0a87410e",
+                "30": "d8464635-09da-4cc8-8680-93d7a97e024f",
+                "60": "6863959f-2a69-47c6-a181-2781c631bbc2",
+                "90": "9349a37a-6e1a-4fb1-a4b1-a3fdd69e4c8f",
+                "120": "2f682e70-d885-4317-9a1e-34d4f1b1cc85",
+                "150": "77035e9b-acfc-4bde-abee-5793a669afc5",
+                "180": "49772c12-f540-44d1-9d29-52f39a7bc1e1",
+                "210": "785ba31c-f857-4ccb-8beb-fb1b8807dc2a",
+                "240": "686710c9-55fe-449a-83f0-e9f419f3553d",
+                "270": "db76e2d5-3b8d-432c-b063-e21bca9783e9",
+                "300": "9cc1b041-bd9d-44cd-925f-a8c15f88edae",
+                "330": "507a1ee3-a114-4112-904a-ee49aa48492e"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d3ff1563-8fe0-4d88-b7ea-2a1d0a87410e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d8464635-09da-4cc8-8680-93d7a97e024f",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "6863959f-2a69-47c6-a181-2781c631bbc2",
+            "latches": [
+                "94bc6038-919a-4936-9464-732937e5f08a",
+                "140b0573-4832-4242-8f0a-bc1c2ec7a577"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9349a37a-6e1a-4fb1-a4b1-a3fdd69e4c8f",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "2f682e70-d885-4317-9a1e-34d4f1b1cc85",
+            "latches": [
+                "910dfbbb-a805-4695-8a84-1e4fcb842ffb",
+                "a748bb7d-71a4-424a-92b4-45606ecb09c5"
+            ]
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "77035e9b-acfc-4bde-abee-5793a669afc5",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "49772c12-f540-44d1-9d29-52f39a7bc1e1",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "785ba31c-f857-4ccb-8beb-fb1b8807dc2a",
+            "latches": [
+                "088f09d9-5407-47d9-aacb-c3f47d0b9b16"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "686710c9-55fe-449a-83f0-e9f419f3553d",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "db76e2d5-3b8d-432c-b063-e21bca9783e9",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9cc1b041-bd9d-44cd-925f-a8c15f88edae",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "507a1ee3-a114-4112-904a-ee49aa48492e",
+            "latches": []
+        },
+        {
+            "id": "malware",
+            "instance": "ee77d17b-d2c2-48d6-9c88-384dca68de41",
+            "properties": [
+                [
+                    "name",
+                    "RDP Lateral Movement (T1021.001)"
+                ],
+                [
+                    "description",
+                    "RDP lateral movement is Yayo's signature post-access technique at 9 reports — once inside, the actor pivots across Windows hosts using Remote Desktop Protocol authenticated with harvested domain or local credentials. RDP-based movement provides interactive graphical access to additional systems, enabling the actor to explore the victim environment, collect sensitive data, and expand the scope of compromised access for resale or further exploitation."
+                ],
+                [
+                    "malware_types",
+                    [
+                        [
+                            "e00ef291-817e-42ca-a603-958b6d59e786",
+                            "Lateral Movement"
+                        ]
+                    ]
+                ],
+                [
+                    "is_family",
+                    null
+                ],
+                [
+                    "aliases",
+                    []
+                ],
+                [
+                    "kill_chain_phases",
+                    []
+                ],
+                [
+                    "first_seen",
+                    null
+                ],
+                [
+                    "last_seen",
+                    null
+                ],
+                [
+                    "os_execution_envs",
+                    []
+                ],
+                [
+                    "architecture_execution_envs",
+                    []
+                ],
+                [
+                    "implementation_languages",
+                    []
+                ],
+                [
+                    "capabilities",
+                    []
+                ]
+            ],
+            "anchors": {
+                "0": "7b77f910-6208-4c35-ab7d-e61f7e7f0005",
+                "30": "cc0df7c4-e135-460b-af9a-06c4b71af892",
+                "60": "ecd06f1f-5065-4c55-9180-854333863ea3",
+                "90": "e01c8335-93f4-4aae-a907-7950bd80327b",
+                "120": "5d0e94b2-69a1-4625-96e7-d910f9b94678",
+                "150": "98b5b7f1-0a3d-4e05-83ba-f2999b19c88c",
+                "180": "796219e5-6d55-41a3-85cf-9125a0f64ada",
+                "210": "3b320c23-a0c4-4ca8-9017-2b5c52e3d0a0",
+                "240": "9300fd2e-ac6b-4279-8c7e-acb69fba8c73",
+                "270": "dc411fe6-5db3-4f8c-8c18-c41709f471fb",
+                "300": "97de816f-7cfc-4073-928c-ebe350effdf0",
+                "330": "d53548a4-5e2b-4c77-8d66-7c61dca122d6"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "7b77f910-6208-4c35-ab7d-e61f7e7f0005",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "cc0df7c4-e135-460b-af9a-06c4b71af892",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "ecd06f1f-5065-4c55-9180-854333863ea3",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e01c8335-93f4-4aae-a907-7950bd80327b",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "5d0e94b2-69a1-4625-96e7-d910f9b94678",
+            "latches": [
+                "7f896bc1-a6f5-4175-a20d-8d909778bfa2"
+            ]
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "98b5b7f1-0a3d-4e05-83ba-f2999b19c88c",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "796219e5-6d55-41a3-85cf-9125a0f64ada",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "3b320c23-a0c4-4ca8-9017-2b5c52e3d0a0",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9300fd2e-ac6b-4279-8c7e-acb69fba8c73",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "dc411fe6-5db3-4f8c-8c18-c41709f471fb",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "97de816f-7cfc-4073-928c-ebe350effdf0",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d53548a4-5e2b-4c77-8d66-7c61dca122d6",
+            "latches": []
+        },
+        {
+            "id": "malware",
+            "instance": "769fb801-3ded-4836-b325-34d7928bfdd3",
+            "properties": [
+                [
+                    "name",
+                    "Telegram C2 (T1071.002)"
+                ],
+                [
+                    "description",
+                    "Yayo uses Telegram bots as a command-and-control channel, routing operational commands and operational data through the platform's application-layer protocol API over standard HTTPS. Telegram C2 is resilient and low-maintenance, blending with legitimate business messaging traffic and providing the actor with a channel that is difficult to block without impacting normal enterprise communications."
+                ],
+                [
+                    "malware_types",
+                    [
+                        [
+                            "8f883f9f-a6cb-421c-8f54-eebfad34090d",
+                            "C2 Channel"
+                        ]
+                    ]
+                ],
+                [
+                    "is_family",
+                    null
+                ],
+                [
+                    "aliases",
+                    []
+                ],
+                [
+                    "kill_chain_phases",
+                    []
+                ],
+                [
+                    "first_seen",
+                    null
+                ],
+                [
+                    "last_seen",
+                    null
+                ],
+                [
+                    "os_execution_envs",
+                    []
+                ],
+                [
+                    "architecture_execution_envs",
+                    []
+                ],
+                [
+                    "implementation_languages",
+                    []
+                ],
+                [
+                    "capabilities",
+                    []
+                ]
+            ],
+            "anchors": {
+                "0": "737e032a-3dba-4e40-958e-45eb121eeb2e",
+                "30": "eb92428f-3fcb-415b-b2aa-c77a98340108",
+                "60": "b7c4b343-e1e4-41ab-9d4e-a55603fa6cce",
+                "90": "6fd4f21b-a24f-464f-8b6f-a2629ff479b2",
+                "120": "29eef21a-1bb0-4330-b662-037a743490e2",
+                "150": "7a1252e8-83de-49c1-bcaf-2bcc4bd271d9",
+                "180": "272540de-a0f1-44af-8016-6da050f29cbd",
+                "210": "a4325d19-a58f-4f7f-a5de-f0fe35ee832a",
+                "240": "88e5ca06-a67f-4510-90b7-eebac1a77a59",
+                "270": "a7282f53-f070-4d13-8c94-377fecc89591",
+                "300": "1c73d1f1-b427-41e2-ba76-8743fce1ebfc",
+                "330": "47454733-1638-4294-9191-f34893bc5fd5"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "737e032a-3dba-4e40-958e-45eb121eeb2e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "eb92428f-3fcb-415b-b2aa-c77a98340108",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "b7c4b343-e1e4-41ab-9d4e-a55603fa6cce",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "6fd4f21b-a24f-464f-8b6f-a2629ff479b2",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "29eef21a-1bb0-4330-b662-037a743490e2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "7a1252e8-83de-49c1-bcaf-2bcc4bd271d9",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "272540de-a0f1-44af-8016-6da050f29cbd",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a4325d19-a58f-4f7f-a5de-f0fe35ee832a",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "88e5ca06-a67f-4510-90b7-eebac1a77a59",
+            "latches": [
+                "5a40fcfd-41a7-4e32-aeb6-de977995421f"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a7282f53-f070-4d13-8c94-377fecc89591",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "1c73d1f1-b427-41e2-ba76-8743fce1ebfc",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "47454733-1638-4294-9191-f34893bc5fd5",
+            "latches": []
+        },
+        {
+            "id": "asset",
+            "instance": "60f6d58e-f708-4fd7-b501-c92cf34dc2b7",
+            "properties": [
+                [
+                    "name",
+                    "DMZ / PERIMETER SEGMENT"
+                ],
+                [
+                    "description",
+                    "RDP Gateways\nVPN Appliances\nSSH Servers\nWeb Management Interfaces\nRemote Management Services"
+                ]
+            ],
+            "anchors": {
+                "0": "3c10fcbd-c118-4d9b-a021-96857f18169e",
+                "30": "b1dba7ba-e3f6-448c-a974-c8ba4f1d18f4",
+                "60": "ee7855b0-1dec-4883-a258-3b44cce85281",
+                "90": "c1a25bc7-2973-4daf-bb62-3649a83eb850",
+                "120": "cd3dbc9f-430d-4071-85ff-476f9c9d5afc",
+                "150": "5e41568f-f3c7-4b72-9f6b-91991fb55426",
+                "180": "9eeded1d-141f-4dcf-813d-52e46c268db3",
+                "210": "b05861db-6d57-4e54-9db5-a635358f69a9",
+                "240": "0bada38c-65ba-45b2-8fee-ee8656f5b0eb",
+                "270": "7a63ad65-133a-45c8-8f3a-c7ac780c7814",
+                "300": "f69abbc3-83f2-4bef-901a-e86d4bcf6d62",
+                "330": "7c835701-3dae-408b-a179-82dcacb4cd9e"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "3c10fcbd-c118-4d9b-a021-96857f18169e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "b1dba7ba-e3f6-448c-a974-c8ba4f1d18f4",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "ee7855b0-1dec-4883-a258-3b44cce85281",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "c1a25bc7-2973-4daf-bb62-3649a83eb850",
+            "latches": [
+                "d1d64bc8-400a-4e80-9a45-64017d0fd8c5"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "cd3dbc9f-430d-4071-85ff-476f9c9d5afc",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "5e41568f-f3c7-4b72-9f6b-91991fb55426",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "9eeded1d-141f-4dcf-813d-52e46c268db3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "b05861db-6d57-4e54-9db5-a635358f69a9",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0bada38c-65ba-45b2-8fee-ee8656f5b0eb",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "7a63ad65-133a-45c8-8f3a-c7ac780c7814",
+            "latches": [
+                "a6deb674-9313-4cb6-ba3a-ff1adee5862c"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f69abbc3-83f2-4bef-901a-e86d4bcf6d62",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "7c835701-3dae-408b-a179-82dcacb4cd9e",
+            "latches": []
+        },
+        {
+            "id": "asset",
+            "instance": "4d2fbe83-e628-404b-ae6e-40d70acb4362",
+            "properties": [
+                [
+                    "name",
+                    "IDENTITY & DIRECTORY SEGMENT"
+                ],
+                [
+                    "description",
+                    "Active Directory Domain Controllers\nAD Certificate Services\nLDAP / Kerberos Infrastructure\nLocal Account Stores\nPrivileged Access Workstations"
+                ]
+            ],
+            "anchors": {
+                "0": "6fb49e05-5748-476d-82f6-a119b14534f6",
+                "30": "0c2de654-ba43-46d8-b6d6-afb85a1b0556",
+                "60": "263d39b6-9bc5-4be5-aa3b-0f9b16d1e2fc",
+                "90": "878515d4-18d6-41fa-9bf7-b9d4eed4ccda",
+                "120": "66917f64-6632-4daa-8f54-04f187f44022",
+                "150": "beb69546-e48f-4dc5-87bb-d7a28164a020",
+                "180": "ab6c38b4-dc1c-4779-9960-37f2f0156a00",
+                "210": "fe3caf65-28c2-49a8-a71e-b49cde10cffa",
+                "240": "bfd345cb-f178-47ca-bdcd-90ac21e4483a",
+                "270": "6616d07c-b89e-4609-8974-152e4a563b81",
+                "300": "16dcdd00-9a16-470f-897a-399ceda381e4",
+                "330": "bba3dcb3-d3d3-4e8e-af56-810faa9ffa14"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "6fb49e05-5748-476d-82f6-a119b14534f6",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "0c2de654-ba43-46d8-b6d6-afb85a1b0556",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "263d39b6-9bc5-4be5-aa3b-0f9b16d1e2fc",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "878515d4-18d6-41fa-9bf7-b9d4eed4ccda",
+            "latches": [
+                "20f0e29f-0c12-4328-8a55-b55630f836f2"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "66917f64-6632-4daa-8f54-04f187f44022",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "beb69546-e48f-4dc5-87bb-d7a28164a020",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "ab6c38b4-dc1c-4779-9960-37f2f0156a00",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "fe3caf65-28c2-49a8-a71e-b49cde10cffa",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "bfd345cb-f178-47ca-bdcd-90ac21e4483a",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "6616d07c-b89e-4609-8974-152e4a563b81",
+            "latches": [
+                "1907ecec-6ca3-4c9c-9069-3f770e362315"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "16dcdd00-9a16-470f-897a-399ceda381e4",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "bba3dcb3-d3d3-4e8e-af56-810faa9ffa14",
+            "latches": []
+        },
+        {
+            "id": "asset",
+            "instance": "c4d69a29-ba55-47d3-812a-55dc7098ed1e",
+            "properties": [
+                [
+                    "name",
+                    "ENTERPRISE DATA SEGMENT"
+                ],
+                [
+                    "description",
+                    "File Servers\nDatabase Servers\nEmail Servers\nUser Workstations (RDP)\nInternal Applications"
+                ]
+            ],
+            "anchors": {
+                "0": "5565953a-67c7-4b57-a9c9-68985b54ec93",
+                "30": "85ec8054-f510-4aeb-9530-4270765a8af1",
+                "60": "3e802cbc-fa05-4e4d-bd31-d6e2ea3eca2a",
+                "90": "339900fa-c4ad-4ac6-9c80-8be3f95424d1",
+                "120": "0915ae50-f4ad-4662-bb27-b67d3b74bc4d",
+                "150": "26454052-3c93-4ff7-82e4-5d7b0ce82435",
+                "180": "87dd1277-e653-4a15-8b54-d69e9b6821ca",
+                "210": "a44f43ea-8f12-41da-9ba6-88b44cf45546",
+                "240": "b77f20d4-2cd8-4ad4-a0d7-09848f86fd71",
+                "270": "5fa4399c-d67d-4fae-a722-e2577ace1525",
+                "300": "583441c7-8929-4592-ac82-27ec49be2c45",
+                "330": "c74a4f38-948f-48f5-ab41-0d71f0ff82fa"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "5565953a-67c7-4b57-a9c9-68985b54ec93",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "85ec8054-f510-4aeb-9530-4270765a8af1",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "3e802cbc-fa05-4e4d-bd31-d6e2ea3eca2a",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "339900fa-c4ad-4ac6-9c80-8be3f95424d1",
+            "latches": [
+                "413925f0-0e03-4cfb-9062-afdf17b867bb"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0915ae50-f4ad-4662-bb27-b67d3b74bc4d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "26454052-3c93-4ff7-82e4-5d7b0ce82435",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "87dd1277-e653-4a15-8b54-d69e9b6821ca",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a44f43ea-8f12-41da-9ba6-88b44cf45546",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "b77f20d4-2cd8-4ad4-a0d7-09848f86fd71",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "5fa4399c-d67d-4fae-a722-e2577ace1525",
+            "latches": [
+                "e3ad4ee7-fc49-4e0c-bee1-c8ec9c71e9d6"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "583441c7-8929-4592-ac82-27ec49be2c45",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "c74a4f38-948f-48f5-ab41-0d71f0ff82fa",
+            "latches": []
+        },
+        {
+            "id": "asset",
+            "instance": "f0f85fe0-9376-4c3f-bb6d-8159693f8a90",
+            "properties": [
+                [
+                    "name",
+                    "BACKUP & RECOVERY SEGMENT"
+                ],
+                [
+                    "description",
+                    "Backup Servers\nVeeam / Backup Exec\nVolume Shadow Copies (VSS)\nSnapshot Infrastructure\nOffsite Replication Targets"
+                ]
+            ],
+            "anchors": {
+                "0": "ee5c4f9a-43a9-49b1-85e6-50b18544a4a0",
+                "30": "b14fcb0c-2d61-4133-9b1d-62430cb45b30",
+                "60": "7b1b5b8f-e5ad-45fb-98b7-9a3596ad11a5",
+                "90": "7a75b28b-2f87-40c0-a7c5-64d24a487340",
+                "120": "bef92ea3-805e-40a5-86a8-3e0ba25393f6",
+                "150": "3842d2d6-5fc4-4d22-bd4a-c9978c13092f",
+                "180": "f8a986e3-ac6e-40a4-94b9-c124f1feac82",
+                "210": "85dfee01-5949-4965-b538-2e2e595045b1",
+                "240": "f5752e11-b047-4dcb-b82d-ddaf6380ef1c",
+                "270": "28ecddbe-8f17-455b-bbc5-9a9f43a781a4",
+                "300": "4ec8b5a9-4f29-4646-92f0-12d12574c9c2",
+                "330": "97790b79-b53f-49b8-a196-68c0d0d392e3"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "ee5c4f9a-43a9-49b1-85e6-50b18544a4a0",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "b14fcb0c-2d61-4133-9b1d-62430cb45b30",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "7b1b5b8f-e5ad-45fb-98b7-9a3596ad11a5",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "7a75b28b-2f87-40c0-a7c5-64d24a487340",
+            "latches": [
+                "50c1c271-c1a9-41b6-91e1-e64253c38030"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "bef92ea3-805e-40a5-86a8-3e0ba25393f6",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "3842d2d6-5fc4-4d22-bd4a-c9978c13092f",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f8a986e3-ac6e-40a4-94b9-c124f1feac82",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "85dfee01-5949-4965-b538-2e2e595045b1",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f5752e11-b047-4dcb-b82d-ddaf6380ef1c",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "28ecddbe-8f17-455b-bbc5-9a9f43a781a4",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4ec8b5a9-4f29-4646-92f0-12d12574c9c2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "97790b79-b53f-49b8-a196-68c0d0d392e3",
+            "latches": []
+        }
+    ],
+    "layout": {
+        "d6da95cf-efab-4113-9227-7d23326e1dbd": [
+            -223.5,
+            1601.5
+        ],
+        "41ee0ea8-4036-4064-b8c4-e4b8c6d6472f": [
+            -468.5,
+            2101.5
+        ],
+        "09a07373-156b-4d27-9955-8b89a9fa381f": [
+            21.5,
+            2101.5
+        ],
+        "216d33a8-5cfd-4ec2-893c-0a64f4982cde": [
+            541.5,
+            2781.5
+        ],
+        "ee77d17b-d2c2-48d6-9c88-384dca68de41": [
+            1060,
+            2755
+        ],
+        "769fb801-3ded-4836-b325-34d7928bfdd3": [
+            865,
+            2205
+        ],
+        "60f6d58e-f708-4fd7-b501-c92cf34dc2b7": [
+            541.5,
+            3276.5
+        ],
+        "4d2fbe83-e628-404b-ae6e-40d70acb4362": [
+            541.5,
+            3561.5
+        ],
+        "c4d69a29-ba55-47d3-812a-55dc7098ed1e": [
+            541.5,
+            3866.5
+        ],
+        "f0f85fe0-9376-4c3f-bb6d-8159693f8a90": [
+            541.5,
+            4171.5
+        ],
+        "b89f02cc-c409-4446-82d9-60625d7b7c50": [
+            801,
+            2465
+        ]
+    },
+    "camera": {
+        "x": 363,
+        "y": 2598,
+        "k": 0.2986615722992294
+    }
+}
